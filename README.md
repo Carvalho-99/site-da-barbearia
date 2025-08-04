@@ -21,7 +21,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 Este projeto foi desenvolvido por: Bruno Alves de carvalho 
 
 -   LinkedIn www.linkedin.com/in/bruno-alves-83a3a2242
--   Se preferir meu instagram https://www.instagram.com/bruno.alves_carvalho_?
+-   Se preferir meu instagram: (Https://www.instagram.com/bruno.alves_carvalho_?igsh=ankwdWpmcDhwdmxw&utm_source=qr)
 
 
 estou começando agora então pode ser que não seja do agrado de todos agraço!
