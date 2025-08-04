@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="video-header">
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="fotos/capa1.mp4" type="video/mp4">
+    </video>
+  </div>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#agendar">Agendamento</a></li>
+    </ul>
+  </nav>
+
+  <section class="mensagem">
+    <h2>"Onde o corte vira arte"</h2>
+    <p>Transformamos seu estilo com técnica e Elegancia.</p>
+  </section>
+
+ <section id="fotos" class="galeria">
+  <h2>Galeria de Fotos</h2>
+  <div class="botoes-galeria">
+    <button onclick="window.location.href='galeria-jorge.html.html'">Galeria do Jorge</button>
+    <button onclick="window.location.href='galeria-adriano.html.html'">Galeria do Adriano</button>
+  </div>
+</section>
+
+
+<section id="contato" class="contato">
+  <h2>Contato</h2>
+  <p>📞 (14) 98822-8379</p>
+  <p>📞 (14) 99629-2467</p>
+  <p>📍 Rua Curuzu 985 Centro - Botucatu</p>
+ <div class="redes-sociais">
+  <a href="https://wa.me/5514988228379" target="_blank" aria-label="WhatsApp" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://wa.me/5514996292467" target="_blank" aria-label="WhatsApp" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/adriano_barberrx" target="_blank" aria-label="Instagram" class="instagram">
+
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.instagram.com/jorge_fernandesbr" target="_blank" aria-label="Instagram" class="instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+</section>
+
+
+  <section id="agendar" class="agendar">
+    <h2>Agende seu corte</h2>
+    <a href="https://chat.inbarberapp.com/?id=32f200e5-f181-44e3-959c-3cfe1b4ca78e" target="_blank" class="botao-agendar">Agendar com Adriano</a>
+
+  </section>
+<section id="agendar" class="agendar">
+    <h2>Agende seu corte</h2>
+    <a href="https://chat.inbarberapp.com/?id=32f200e5-f181-44e3-959c-3cfe1b4ca78e" target="_blank" class="botao-agendar">Agendar com Jorge </a>
+
+  </section>
+  <footer>
+    <p>&copy; 2025 Central Barber Studio. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span id="fechar-lightbox" class="fechar">&times;</span>
+    <img id="img-lightbox" src="" alt="Imagem Ampliada" />
+  </div>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="btn-topo" title="Voltar ao topo">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

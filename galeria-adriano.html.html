@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria do Adriano</title>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      background-image: url('fotos/jorge/dunfo6.jpeg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2.8em;
+      background: linear-gradient(45deg, #f0f0f0, #cccccc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    /* --- NOVO CSS para os dois botões --- */
+    .text-box {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .btn {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 12px 30px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-family: 'Fjalla One', sans-serif;
+      letter-spacing: 2px;
+      cursor: pointer;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.4s ease;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #fff;
+    }
+  </style>
+</head>
+<body>
+  <a id="topo"></a>
+  <h1>Galeria do Adriano</h1>
+
+  <div class="galeria">
+    <a href="#img1"><img src="fotos/adriano/foto1.png.jpeg" alt="Foto 1" /></a>
+    <a href="#img2"><img src="fotos/adriano/foto2.png.jpeg" alt="Foto 2" /></a>
+    <a href="#img3"><img src="fotos/adriano/foto3.png.jpeg" alt="Foto 3" /></a>
+    <a href="#img4"><img src="fotos/jorge/foto4.jpeg.jpeg" alt="Foto 4" /></a>
+    <a href="#img5"><img src="fotos/adriano/foto5.png.jpeg" alt="Foto 5" /></a>
+    <a href="#img6"><img src="fotos/adriano/foto6.png.jpeg" alt="Foto 6" /></a>
+    <a href="#img7"><img src="fotos/adriano/foto7.png.jpeg" alt="Foto 7" /></a>
+    <a href="#img8"><img src="fotos/adriano/foto8.png.jpeg" alt="Foto 8" /></a>
+    <a href="#img9"><img src="fotos/adriano/foto9.png.jpeg" alt="Foto 9" /></a>
+    <a href="#img10"><img src="fotos/adriano/foto10.png.jpeg" alt="Foto 10" /></a>
+    <a href="#img10"><img src="fotos/adriano/foto11.png.jpeg" alt="Foto 11" /></a>
+    <a href="#img10"><img src="fotos/adriano/foto12.png.jpeg" alt="Foto 12" /></a>
+    <a href="#img10"><img src="fotos/adriano/foto13.png.jpeg" alt="Foto 13" /></a>
+  </div>
+
+  <!-- Lightboxes -->
+  <div id="img1" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto1.png.jpeg" alt="Foto 1 Grande"></div>
+  <div id="img2" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto2.png.jpeg" alt="Foto 2 Grande"></div>
+  <div id="img3" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto3.png.jpeg" alt="Foto 3 Grande"></div>
+  <div id="img4" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto4.png.jpeg" alt="Foto 4 Grande"></div>
+  <div id="img5" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto5.png.jpeg" alt="Foto 5 Grande"></div>
+  <div id="img6" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto6.png.jpeg" alt="Foto 6 Grande"></div>
+  <div id="img7" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto7.png.jpeg" alt="Foto 7 Grande"></div>
+  <div id="img8" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto8.png.jpeg" alt="Foto 8 Grande"></div>
+  <div id="img9" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto9.png.jpeg" alt="Foto 9 Grande"></div>
+  <div id="img10" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto10.png.jpeg" alt="Foto 10 Grande"></div>
+    <div id="img10" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto11.png.jpeg" alt="Foto 11 Grande"></div>
+      <div id="img10" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto12.png.jpeg" alt="Foto 12 Grande"></div>
+        <div id="img10" class="lightbox"><a href="#" class="close">&times;</a><img src="fotos/adriano/foto13.png.jpeg" alt="Foto 13 Grande"></div>
+
+  <div class="text-box">
+  <a href=" https://chat.inbarberapp.com/?id=32f200e5-f181-44e3-959c-3cfe1b4ca78e " class="btn">Marcar corte</a>
+</div>
+<div class="text-box">
+  <a href="index.html" class="btn">Voltar</a>
+</div>
+
