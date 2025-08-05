@@ -11,3 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+<script>
+  const video = document.querySelector('.video-container video');
+  const loader = document.getElementById('video-loader');
+
+  if (video && loader) {
+    video.addEventListener('canplaythrough', () => {
+      loader.style.display = 'none';
+    });
+  }
+</script>
+
