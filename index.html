@@ -11,9 +11,18 @@
 
 <header class="video-header">
   <div class="video-container">
-    <video autoplay muted loop playsinline>
+    <!-- Loader enquanto o vídeo carrega -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Vídeo -->
+    <video autoplay muted loop playsinline id="video-bg">
       <source src="capa1.mp4" type="video/mp4">
     </video>
+
+    <!-- Seta para rolar para baixo -->
+    <div class="seta-baixo" onclick="scrollToSection()">
+      <i class="fas fa-chevron-down"></i>
+    </div>
   </div>
 </header>
 
@@ -85,5 +94,6 @@
 </body>
 
 </html>
+
 
 
