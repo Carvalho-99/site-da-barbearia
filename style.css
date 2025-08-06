@@ -46,7 +46,7 @@ body {
   z-index: 1;
 }
 
-/* Seta para rolar para baixo - desktop */
+/* Seta para rolar para baixo - visível e centralizada em todos dispositivos */
 .seta-baixo {
   position: absolute;
   bottom: 30px;
@@ -284,13 +284,12 @@ a[href^="tel:"]:hover {
     overflow: visible !important;
   }
 
-  /* Seta corrigida no mobile */
+  /* Seta centralizada no mobile */
   .seta-baixo {
-    position: relative;
-    bottom: auto;
+    position: absolute;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 15px;
     font-size: 2.5rem;
     color: white;
     z-index: 10;
@@ -299,12 +298,3 @@ a[href^="tel:"]:hover {
     animation: bounce 2s infinite;
   }
 }
-
-
-  .video-header {
-    flex-direction: column;
-    background-color: #000; /* fundo preto */
-  }
-
-
-
