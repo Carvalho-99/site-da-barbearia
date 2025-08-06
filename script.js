@@ -16,15 +16,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const loader = document.getElementById('loader');
 
   if (video && loader) {
+    // Quando o vídeo estiver pronto para tocar
     video.addEventListener('canplaythrough', () => {
       loader.style.display = 'none';
     });
+
+    // Timeout para esconder o loader após 10 segundos, caso o vídeo não carregue
+    setTimeout(() => {
+      if (loader.style.display !== 'none') {
+        loader.style.display = 'none';
+      }
+    }, 10000);
   }
 });
+
 function scrollToSection() {
   window.scrollTo({
     top: window.innerHeight,
     behavior: 'smooth'
   });
 }
-
