@@ -273,29 +273,37 @@ a[href^="tel:"]:hover {
     height: 40px;
   }
 
+  .video-header {
+    flex-direction: column;
+    background-color: #000;
+  }
+
   .video-container {
     width: 100%;
     border-radius: 0;
-    overflow: visible !important; /* para mostrar seta fora do vídeo */
+    overflow: visible !important;
   }
 
-  /* Seta fora do vídeo, centralizada e animada */
+  /* Seta corrigida no mobile */
   .seta-baixo {
-    position: relative; /* tirar absolute */
+    position: relative;
     bottom: auto;
     left: 50%;
     transform: translateX(-50%);
-    margin: 15px 0 0 0;
-    display: block;
+    margin-top: 15px;
     font-size: 2.5rem;
     color: white;
     z-index: 10;
     cursor: pointer;
+    display: block;
     animation: bounce 2s infinite;
   }
+}
+
 
   .video-header {
     flex-direction: column;
     background-color: #000; /* fundo preto */
   }
 }
+
