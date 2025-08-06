@@ -280,9 +280,11 @@ a[href^="tel:"]:hover {
   }
 
   /* Corrige posição da seta no mobile */
-  .seta-baixo {
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.seta-baixo {
+  position: absolute;
+  bottom: 80px; /* sobe a seta no mobile */
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+
