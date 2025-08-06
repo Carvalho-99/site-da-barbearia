@@ -272,10 +272,41 @@ a[href^="tel:"] {
   font-weight: bold;
   font-size: 18px;
 }
+/* Posição padrão: seta sobre o vídeo (desktop) */
+.seta-baixo {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+/* No mobile: seta abaixo do vídeo */
+@media (max-width: 768px) {
+  .video-header {
+    flex-direction: column; /* empilha vídeo e seta */
+  }
+
+  .seta-baixo {
+    position: relative;   /* sai do absolute */
+    bottom: auto;         /* remove bottom */
+    left: auto;           /* remove left */
+    transform: none;      /* remove translate */
+    margin-top: 10px;     /* distancia da seta para o vídeo */
+    z-index: 10;
+    align-self: center;   /* centraliza a seta na coluna */
+  }
+}
+
 
 a[href^="tel:"]:hover {
   text-decoration: underline;
 }
+
 
 
 
