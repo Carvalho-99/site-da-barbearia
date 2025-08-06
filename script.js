@@ -10,15 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
-});
-<script>
-  const video = document.querySelector('.video-container video');
-  const loader = document.getElementById('video-loader');
+
+  // Loader do vídeo
+  const video = document.getElementById('video-bg');
+  const loader = document.getElementById('loader');
 
   if (video && loader) {
     video.addEventListener('canplaythrough', () => {
       loader.style.display = 'none';
     });
   }
-</script>
-
+});
