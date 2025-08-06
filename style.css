@@ -45,20 +45,21 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
+
+/* Seta para rolar para baixo - desktop */
 .seta-baixo {
   position: absolute;
-  bottom: 30px;       /* Ajuste essa distância para colocar a seta mais pra baixo ou mais pra cima */
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;        /* Para ficar na frente do vídeo */
+  z-index: 10;
   font-size: 2.5rem;
   color: white;
   cursor: pointer;
-
-  /* Animação suave para chamar atenção */
   animation: bounce 2s infinite;
 }
 
+/* Animação da seta */
 @keyframes bounce {
   0%, 100% {
     transform: translateX(-50%) translateY(0);
@@ -231,6 +232,17 @@ footer {
   background-color: #00997a;
 }
 
+a[href^="tel:"] {
+  text-decoration: none !important;
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a[href^="tel:"]:hover {
+  text-decoration: underline;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   nav ul {
@@ -264,38 +276,17 @@ footer {
   .video-container {
     width: 100%;
     border-radius: 0;
+    overflow: visible !important; /* para mostrar seta fora do vídeo */
   }
-}
-a[href^="tel:"] {
-  text-decoration: none !important;
-  color: #000000 !important;
-  font-weight: bold;
-  font-size: 18px;
-}
-/* Posição padrão: seta sobre o vídeo (desktop) */
-.seta-baixo {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  font-size: 2.5rem;
-  color: white;
-  cursor: pointer;
-  animation: bounce 2s infinite;
-}
 
-/* No mobile: seta abaixo do vídeo */
-@media (max-width: 768px) {
-  /* ...seu código já existente... */
-
+  /* Seta fora do vídeo, centralizada e animada */
   .seta-baixo {
-    position: relative !important;        /* tirar do absolute */
-    bottom: auto !important;
-    left: 50% !important;                  /* centralizar */
-    transform: translateX(-50%) !important;
-    margin: 15px 0 0 0;                    /* espaço acima */
-    display: block !important;
+    position: relative; /* tirar absolute */
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0 0 0;
+    display: block;
     font-size: 2.5rem;
     color: white;
     z-index: 10;
@@ -303,46 +294,8 @@ a[href^="tel:"] {
     animation: bounce 2s infinite;
   }
 
-  .video-container {
-    width: 100%;
-    border-radius: 0;
-    overflow: visible !important;         /* deixar mostrar a seta fora */
-  }
-}
-
-
-
-a[href^="tel:"]:hover {
-  text-decoration: underline;
-}
-@media (max-width: 768px) {
   .video-header {
     flex-direction: column;
     background-color: #000; /* fundo preto */
   }
-
-  .seta-baixo {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    transform: none !important;
-    margin: 15px auto 0 auto; /* centralizar e afastar do vídeo */
-    display: block !important;
-    font-size: 2.5rem;
-    color: white;
-    z-index: 10;
-    cursor: pointer;
-    animation: bounce 2s infinite;
-  }
-
-  .video-container {
-    width: 100%;
-    border-radius: 0;
-    overflow: visible !important; /* importante para mostrar a seta fora */
-  }
 }
-
-
-
-
-
