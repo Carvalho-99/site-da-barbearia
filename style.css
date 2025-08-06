@@ -287,20 +287,29 @@ a[href^="tel:"] {
 
 /* No mobile: seta abaixo do vídeo */
 @media (max-width: 768px) {
-  .video-header {
-    flex-direction: column; /* empilha vídeo e seta */
-  }
+  /* ...seu código já existente... */
 
   .seta-baixo {
-    position: relative;   /* sai do absolute */
-    bottom: auto;         /* remove bottom */
-    left: auto;           /* remove left */
-    transform: none;      /* remove translate */
-    margin-top: 10px;     /* distancia da seta para o vídeo */
+    position: relative !important;        /* tirar do absolute */
+    bottom: auto !important;
+    left: 50% !important;                  /* centralizar */
+    transform: translateX(-50%) !important;
+    margin: 15px 0 0 0;                    /* espaço acima */
+    display: block !important;
+    font-size: 2.5rem;
+    color: white;
     z-index: 10;
-    align-self: center;   /* centraliza a seta na coluna */
+    cursor: pointer;
+    animation: bounce 2s infinite;
+  }
+
+  .video-container {
+    width: 100%;
+    border-radius: 0;
+    overflow: visible !important;         /* deixar mostrar a seta fora */
   }
 }
+
 
 
 a[href^="tel:"]:hover {
@@ -332,6 +341,7 @@ a[href^="tel:"]:hover {
     overflow: visible !important; /* importante para mostrar a seta fora */
   }
 }
+
 
 
 
