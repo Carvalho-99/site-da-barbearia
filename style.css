@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -255,48 +254,4 @@ a[href^="tel:"] {
 a[href^="tel:"]:hover {
   text-decoration: underline;
 }
-/* Loader circular enquanto o vídeo carrega */
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 6px solid rgba(255, 255, 255, 0.3);
-  border-top: 6px solid #fff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-  z-index: 10;
-}
-
-/* Animação de rotação do loader */
-@keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-/* Seta animada para rolar para baixo */
-.seta-baixo {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2.5rem;
-  color: #fff;
-  animation: bounce 2s infinite;
-  z-index: 5;
-  cursor: pointer;
-}
-
-/* Animação da seta */
-@keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-10px); }
-}
-
-
-
-
-
 
