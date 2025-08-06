@@ -45,6 +45,28 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
+.seta-baixo {
+  position: absolute;
+  bottom: 30px;       /* Ajuste essa distância para colocar a seta mais pra baixo ou mais pra cima */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;        /* Para ficar na frente do vídeo */
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+
+  /* Animação suave para chamar atenção */
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
 
 .video-container video {
   width: 100%;
@@ -254,4 +276,5 @@ a[href^="tel:"] {
 a[href^="tel:"]:hover {
   text-decoration: underline;
 }
+
 
