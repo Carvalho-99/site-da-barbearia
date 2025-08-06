@@ -47,7 +47,7 @@ body {
 }
 .seta-baixo {
   position: absolute;
-  bottom: 30px;       /* Ajuste essa distância para colocar a seta mais pra baixo ou mais pra cima */
+  bottom: 5px;       /* Ajuste essa distância para colocar a seta mais pra baixo ou mais pra cima */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;        /* Para ficar na frente do vídeo */
@@ -276,5 +276,6 @@ a[href^="tel:"] {
 a[href^="tel:"]:hover {
   text-decoration: underline;
 }
+
 
 
