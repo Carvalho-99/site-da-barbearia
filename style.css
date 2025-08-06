@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #000;
 }
 
@@ -46,7 +47,7 @@ body {
   z-index: 1;
 }
 
-/* Seta para rolar para baixo - visível e centralizada em todos dispositivos */
+/* Seta para rolar para baixo */
 .seta-baixo {
   position: absolute;
   bottom: 30px;
@@ -273,28 +274,15 @@ a[href^="tel:"]:hover {
     height: 40px;
   }
 
-  .video-header {
-    flex-direction: column;
-    background-color: #000;
-  }
-
   .video-container {
     width: 100%;
     border-radius: 0;
-    overflow: visible !important;
   }
 
-  /* Seta centralizada no mobile */
+  /* Corrige posição da seta no mobile */
   .seta-baixo {
-    position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 2.5rem;
-    color: white;
-    z-index: 10;
-    cursor: pointer;
-    display: block;
-    animation: bounce 2s infinite;
   }
 }
