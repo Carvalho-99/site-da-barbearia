@@ -36,7 +36,7 @@ body {
   position: relative;
 }
 
-/* Camada transparente sobre o vídeo */
+
 .video-container::after {
   content: "";
   position: absolute;
@@ -48,7 +48,7 @@ body {
   z-index: 1;
 }
 
-/* Loader spinner para vídeo */
+
 .loader {
   position: absolute;
   top: 50%;
@@ -82,7 +82,7 @@ body {
   animation: bounce 2s infinite;
 }
 
-/* Animação da seta */
+
 @keyframes bounce {
   0%, 100% {
     transform: translateX(-50%) translateY(0);
@@ -92,7 +92,7 @@ body {
   }
 }
 
-/* Vídeo */
+
 .video-container video {
   width: 100%;
   height: auto;
@@ -302,7 +302,7 @@ a[href^="tel:"]:hover {
     border-radius: 0;
   }
 
-  /* Corrige posição da seta no mobile */
+  
   .seta-baixo {
     position: absolute;
     bottom: 120px; /* sobe a seta no mobile */
@@ -310,3 +310,4 @@ a[href^="tel:"]:hover {
     transform: translateX(-50%);
   }
 }
+
